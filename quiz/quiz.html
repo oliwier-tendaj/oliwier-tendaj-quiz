@@ -45,25 +45,12 @@
     <script type="text/javascript">
         function result() {
             var score=0;
-            if (document.getElementById('correct1').checked) 
-            { 
-                score++;
-            }   
-            if (document.getElementById('correct2').checked) 
-            {
-                 score++;
-            }
-            if (document.getElementById('correct3').checked) 
-            { 
-                score++; 
-            }
-            if (document.getElementById('correct4').checked)
-            {
-                score++;
-            }   
-            if (document.getElementById('correct5').checked) 
-            {
-                score++;
+            var arrayOfElements = ["correct1", "correct2", "correct3", "correct4", "correct5"];
+            for (let i = 0; i<5; i++) {
+                if (document.getElementById(arrayOfElements[i]).checked)
+                {
+                    score++;
+                }   
             }
             document.write("twój wynik to: " + score + " punktów");
             document.write('<br> <a href="index.html">powróć</a>');
