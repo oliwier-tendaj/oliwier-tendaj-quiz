@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz multimedialny</title>
+</head>
+<body>
+
+    <!--<script type="text/javascript">
+    var wynik;
+    for (let i = 5; i>=0; i--) {
+        wynik++;
+    }
+    </script>-->
+
+    <h1>Quiz multimedialny</h1>
+
+    <!--Przykładowe pytania do quizu-->
+
+    Ile to 2 + 3? <br>
+    <input type="radio" name="a1" id="correct1"> 5 <br>
+    <input type="radio" name="b1"> 14 <br>
+    <input type="radio" name="c1"> 10 <br> 
+    <input type="radio" name="d1"> 6 <br>
+
+    Ile to 6 * 2? <br>
+    <input type="radio" name="a2"> 50 <br>
+    <input type="radio" name="b2" id="correct2"> 12 <br>
+    <input type="radio" name="c2"> 6 <br> 
+    <input type="radio" name="d2"> 20 <br>
+
+    Ile to 10 / 5? <br>
+    <input type="radio" name="a3"> 5 <br>
+    <input type="radio" name="b3"> 10 <br>
+    <input type="radio" name="c3" id="correct3"> 2 <br> 
+    <input type="radio" name="d3"> 30 <br>
+
+    Ile to 2 ^ 2? <br>
+    <input type="radio" name="a4"> 19 <br>
+    <input type="radio" name="b4"> 18 <br>
+    <input type="radio" name="c4" id="correct4"> 4 <br> 
+    <input type="radio" name="d4"> 2 <br>
+
+    Ile to 100 / 10? <br>
+    <input type="radio" name="a5" id="correct5"> 10 <br>
+    <input type="radio" name="b5"> 200 <br>
+    <input type="radio" name="c5"> 100 <br> 
+    <input type="radio" name="d5"> 1 <br>
+
+    <!--Ile to 4 do pierwiastku 2 stopnia? <br>
+    <input type="radio" name="a6" id="correct6"> 10 <br>
+    <input type="radio" name="b6"> 124 <br>
+    <input type="radio" name="c6"> 4 <br> 
+    <input type="radio" name="d6"> 2 <br>-->
+
+    <input type="submit" name="submit" value="przeslijQuiz" onclick="
+        result()">
+
+    <script type="text/javascript">
+        function result() {
+            var x=0;
+            if (document.getElementById('correct1').checked) { x++; }   
+            if (document.getElementById('correct2').checked) { x++; }
+            if (document.getElementById('correct3').checked) { x++; }
+            if (document.getElementById('correct4').checked)
+            {
+                x++;
+            }   
+            if (document.getElementById('correct5').checked) 
+            {
+                x++;
+            }
+            /*if (document.getElementById('correct6').checked) 
+            {
+                x++;
+            }*/
+            document.write("twój wynik to: " + x + " punktów");
+            //document.write("quiz multimedialny");
+            document.write('<br> <a href="index.html">powróć</a>');
+        }
+    </script>
+</body>
+</html>

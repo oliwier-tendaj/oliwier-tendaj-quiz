@@ -1,0 +1,19 @@
+5 METOD CLEAN CODE:
+
+1. Stosowanie komentarzy, tylko kiedy są potrzebne.
+Dobrze napisany kod powinien być samoopisujący. Komentarze powinny być używane tylko wtedy, gdy są naprawdę potrzebne, na przykład do wyjaśnienia skomplikowanej logiki.
+
+2. Nazewnictwo zmiennych i funkcji
+Wybieraj nazwy, które dokładnie opisują przeznaczenie zmiennej lub funkcji. Na przykład, zamiast używać nazwy x, lepiej użyć liczbaUczestnikow.
+
+3. Usuwanie zakomentowanego kodu
+Zakomentowany kod to zbędny balast, który utrudnia zrozumienie aktualnej logiki. Powinien być usuwany, aby nie wprowadzał chaosu.
+
+4. Spójne formatowanie
+Kod według dobrych praktyk clean code powinien być formatowany zgodnie z ustalonymi zasadami zespołu. Spójność formatowania zwiększa czytelność i ułatwia współpracę.
+
+5. Zasada DRY (Don’t Repeat Yourself)
+Unikanie powtórzeń kodu jest kluczowe. Powielanie kodu zwiększa ryzyko błędów i utrudnia utrzymanie. Powtarzające się fragmenty kodu powinny być wydzielone do osobnych metod lub klas.
+
+SYNTEZA:
+Wybrałem te 5 metod, ponieważ pomogą mi napisać przejrzysty i prosty do zrozumienia kod.
