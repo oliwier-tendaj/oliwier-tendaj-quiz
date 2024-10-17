@@ -1,3 +1,6 @@
+- ver 0.12 Alpha
+    zastosowano drugą metode clean code
+
 - ver 0.11 Alpha
     zastosowano pierwszą metode clean code
 
