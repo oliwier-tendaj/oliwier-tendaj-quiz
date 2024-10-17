@@ -7,13 +7,6 @@
 </head>
 <body>
 
-    <!--<script type="text/javascript">
-    var wynik;
-    for (let i = 5; i>=0; i--) {
-        wynik++;
-    }
-    </script>-->
-
     <h1>Quiz multimedialny</h1>
 
     Ile to 2 + 3? <br>
@@ -46,35 +39,33 @@
     <input type="radio" name="c5"> 100 <br> 
     <input type="radio" name="d5"> 1 <br>
 
-    <!--Ile to 4 do pierwiastku 2 stopnia? <br>
-    <input type="radio" name="a6" id="correct6"> 10 <br>
-    <input type="radio" name="b6"> 124 <br>
-    <input type="radio" name="c6"> 4 <br> 
-    <input type="radio" name="d6"> 2 <br>-->
-
     <input type="submit" name="submit" value="przeslijQuiz" onclick="
         result()">
 
     <script type="text/javascript">
         function result() {
-            var x=0;
-            if (document.getElementById('correct1').checked) { x++; }   
-            if (document.getElementById('correct2').checked) { x++; }
-            if (document.getElementById('correct3').checked) { x++; }
+            var score=0;
+            if (document.getElementById('correct1').checked) 
+            { 
+                score++;
+            }   
+            if (document.getElementById('correct2').checked) 
+            {
+                 score++;
+            }
+            if (document.getElementById('correct3').checked) 
+            { 
+                score++; 
+            }
             if (document.getElementById('correct4').checked)
             {
-                x++;
+                score++;
             }   
             if (document.getElementById('correct5').checked) 
             {
-                x++;
+                score++;
             }
-            /*if (document.getElementById('correct6').checked) 
-            {
-                x++;
-            }*/
-            document.write("twój wynik to: " + x + " punktów");
-            //document.write("quiz multimedialny");
+            document.write("twój wynik to: " + score + " punktów");
             document.write('<br> <a href="index.html">powróć</a>');
         }
     </script>
