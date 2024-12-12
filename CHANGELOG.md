@@ -1,3 +1,7 @@
+- ver 0.20 Alpha
+    dodano komentarze do 5 przykładowych programów w 5 językach programowania na zaliczenie 3'ego etapu
+    usunięto screeny używane do zaliczenia 2'ego etapu
+
 - ver 0.15 Alpha
     zastosowano piątą metode clean code
 
