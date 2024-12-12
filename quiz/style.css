@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: rgb(200, 200, 255);
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 114), rgb(63, 0, 63));
+}
+
+.main-container {
+    text-align: center;
+    font-size: 20px;
+    width: 50%;
+    max-width: 1000px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to bottom right, blue, purple);
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+button, input[type="submit"]  {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 25% 10px 25%;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: rgb(200, 200, 255);
+    background-image: linear-gradient(to bottom right, rgb(115, 115, 255), rgb(128, 64, 128));
+}
+
+input[type="radio"] {
+    padding: 0px 10px 0px 10px;
+    margin: 10px 10px 10px 10px;
+    font-size: 16px;
+}
+
+button:hover, input:hover {
+    background-image: linear-gradient(to bottom right, rgb(80, 80, 140), rgb(80, 45, 80));
+}
+
+#footer {
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+    font-size:20px;
+}
+
+#image2 {
+    height: 70%;
+    width: 70%;
+}

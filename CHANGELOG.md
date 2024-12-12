@@ -1,3 +1,8 @@
+- ver 0.30 Alpha
+    dodano przyciski do interfejsu
+    dodano stylizacje strony
+    usunięto screeny i przykładowy kod używane do zaliczenia 3'ego etapu
+
 - ver 0.20 Alpha
     dodano komentarze do 5 przykładowych programów w 5 językach programowania na zaliczenie 3'ego etapu
     usunięto screeny używane do zaliczenia 2'ego etapu

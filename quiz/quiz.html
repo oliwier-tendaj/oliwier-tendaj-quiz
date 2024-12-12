@@ -4,43 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz multimedialny</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body> 
+    <div class="main-container">
 
     <h1>Quiz multimedialny</h1>
-
+    
+    <div id="result">
     Ile to 2 + 3? <br>
-    <input type="radio" name="a1" id="correct1"> 5 <br>
-    <input type="radio" name="b1"> 14 <br>
-    <input type="radio" name="c1"> 10 <br> 
-    <input type="radio" name="d1"> 6 <br>
+    <input type="radio" name="q1" id="correct1"> 5  
+    <input type="radio" name="q1"> 14  
+    <input type="radio" name="q1"> 10   
+    <input type="radio" name="q1"> 6  <br>
 
     Ile to 6 * 2? <br>
-    <input type="radio" name="a2"> 50 <br>
-    <input type="radio" name="b2" id="correct2"> 12 <br>
-    <input type="radio" name="c2"> 6 <br> 
-    <input type="radio" name="d2"> 20 <br>
+    <input type="radio" name="q2"> 50  
+    <input type="radio" name="q2" id="correct2"> 12  
+    <input type="radio" name="q2"> 6   
+    <input type="radio" name="q2"> 20  <br>
 
     Ile to 10 / 5? <br>
-    <input type="radio" name="a3"> 5 <br>
-    <input type="radio" name="b3"> 10 <br>
-    <input type="radio" name="c3" id="correct3"> 2 <br> 
-    <input type="radio" name="d3"> 30 <br>
+    <input type="radio" name="q3"> 5  
+    <input type="radio" name="q3"> 10  
+    <input type="radio" name="q3" id="correct3"> 2   
+    <input type="radio" name="q3"> 30  <br>
 
     Ile to 2 ^ 2? <br>
-    <input type="radio" name="a4"> 19 <br>
-    <input type="radio" name="b4"> 18 <br>
-    <input type="radio" name="c4" id="correct4"> 4 <br> 
-    <input type="radio" name="d4"> 2 <br>
+    <input type="radio" name="q4"> 19  
+    <input type="radio" name="q4"> 18  
+    <input type="radio" name="q4" id="correct4"> 4   
+    <input type="radio" name="q4"> 2  <br>
 
     Ile to 100 / 10? <br>
-    <input type="radio" name="a5" id="correct5"> 10 <br>
-    <input type="radio" name="b5"> 200 <br>
-    <input type="radio" name="c5"> 100 <br> 
-    <input type="radio" name="d5"> 1 <br>
-
-    <input type="submit" name="submit" value="przeslijQuiz" onclick="
+    <input type="radio" name="q5" id="correct5"> 10  
+    <input type="radio" name="q5"> 200  
+    <input type="radio" name="q5"> 100   
+    <input type="radio" name="q5"> 1 <br>
+    </div>
+    <div id="submit">
+    <input type="submit" name="submit" value="Prześlij quiz" onclick="
         result()">
+    </div>
+    </div>
 
     <script type="text/javascript">
         function result() {
@@ -52,8 +58,8 @@
                     score++;
                 }   
             }
-            document.write("twój wynik to: " + score + " punktów");
-            document.write('<br> <a href="index.html">powróć</a>');
+            document.getElementById("result").innerHTML="Twój wynik to: " + score + " punktów";
+            document.getElementById("submit").innerHTML='<a href="index.html"><button>Powróć</button></a>';
         }
     </script>
 </body>
