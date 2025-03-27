@@ -12,35 +12,70 @@
     <h1>Quiz multimedialny</h1>
     
     <div id="result">
-    Ile to 2 + 3? <br>
-    <input type="radio" name="q1" id="correct1"> 5  
-    <input type="radio" name="q1"> 14  
-    <input type="radio" name="q1"> 10   
-    <input type="radio" name="q1"> 6  <br>
+    <!--quiz w c++-->
+    <div id="result-cpp">
+        Jakie jest rozszerzenie plików C++? <br>
+        <input type="radio" name="q1"> .cpp  
+        <input type="radio" name="q1"> .cxx  
+        <input type="radio" name="q1"> .cc   
+        <input type="radio" name="q1" id="correct1"> Wszystkie powyższe <br>
 
-    Ile to 6 * 2? <br>
-    <input type="radio" name="q2"> 50  
-    <input type="radio" name="q2" id="correct2"> 12  
-    <input type="radio" name="q2"> 6   
-    <input type="radio" name="q2"> 20  <br>
+        Co robi virtual? <br>
+        <input type="radio" name="q2">  Tworzy obiekt
+        <input type="radio" name="q2" id="correct2"> Umożliwia przesłanianie metod
+        <input type="radio" name="q2"> Zmienia widoczność
+        <input type="radio" name="q2">  Nic  <br>
 
-    Ile to 10 / 5? <br>
-    <input type="radio" name="q3"> 5  
-    <input type="radio" name="q3"> 10  
-    <input type="radio" name="q3" id="correct3"> 2   
-    <input type="radio" name="q3"> 30  <br>
+        Jakie wartości ma bool?<br>
+        <input type="radio" name="q3"> 0 i 1
+        <input type="radio" name="q3" id="correct3"> true i false  
+        <input type="radio" name="q3"> Dowolne liczby
+        <input type="radio" name="q3"> Zależy od kompilatora  <br>
 
-    Ile to 2 ^ 2? <br>
-    <input type="radio" name="q4"> 19  
-    <input type="radio" name="q4"> 18  
-    <input type="radio" name="q4" id="correct4"> 4   
-    <input type="radio" name="q4"> 2  <br>
+        Do czego służy new? <br>
+        <input type="radio" name="q4"> Zwalnia pamięć
+        <input type="radio" name="q4" id="correct4"> Alokuje pamięć
+        <input type="radio" name="q4"> Tworzy zmienną  
+        <input type="radio" name="q4"> Konwertuje typ  <br>
 
-    Ile to 100 / 10? <br>
-    <input type="radio" name="q5" id="correct5"> 10  
-    <input type="radio" name="q5"> 200  
-    <input type="radio" name="q5"> 100   
-    <input type="radio" name="q5"> 1 <br>
+        Który nagłówek zawiera std::vector? <br>
+        <input type="radio" name="q5" id="correct5"> < vector >  
+        <input type="radio" name="q5"> < array >  
+        <input type="radio" name="q5"> < list >   
+        <input type="radio" name="q5"> < string > <br>
+    </div>
+    <!--quiz w javie-->
+    <div id="result-java">
+        Która klasa obsługuje I/O? <br>
+        <input type="radio" name="q1">  FileReader
+        <input type="radio" name="q1"> BufferedReader
+        <input type="radio" name="q1"> Scanner     
+        <input type="radio" name="q1" id="correct1"> Wszystkie powyższe<br>
+    
+        Jak zadeklarować stałą? <br>
+        <input type="radio" name="q2"> static    
+        <input type="radio" name="q2" id="correct2"> final    
+        <input type="radio" name="q2"> const     
+        <input type="radio" name="q2"> immutable<br>
+    
+        Co robi extends? <br>
+        <input type="radio" name="q3"> Definiuje interfejs  
+        <input type="radio" name="q3"> Tworzy obiekt  
+        <input type="radio" name="q3" id="correct3"> Dziedziczy po klasie   
+        <input type="radio" name="q3"> Importuje pakiety<br>
+    
+        Jak zadeklarować tablicę? <br>
+        <input type="radio" name="q4" id="correct4"> int[] numbers = new int[5];  
+        <input type="radio" name="q4"> int numbers = new int[5];  
+        <input type="radio" name="q4"> array< int > numbers = new array< int >[5];   
+        <input type="radio" name="q4"> int numbers = {1, 2, 3, 4, 5};<br>
+    
+        Który modyfikator ogranicza dostęp do klasy? <br>
+        <input type="radio" name="q5" id="correct5"> private    
+        <input type="radio" name="q5"> protected    
+        <input type="radio" name="q5"> public     
+        <input type="radio" name="q5"> default <br>
+    </div>
     </div>
     <div id="submit">
     <input type="submit" name="submit" value="Prześlij quiz" onclick="
@@ -49,6 +84,16 @@
     </div>
 
     <script type="text/javascript">
+        var link = window.location.href;
+
+        var category = link.replace("file:///C:/Users/blue/Desktop/school%20shiy/2BP_Oliwier_Tendaj_PROJOPP_AP_e4/quiz/quiz.html?","");
+
+        if (category === "cpp") {
+            document.getElementById('result-java').innerHTML = '<br>';
+        } else if (category === "java") {
+            document.getElementById('result-cpp').innerHTML = ' ';
+        }
+
         function result() {
             var score=0;
             var arrayOfElements = ["correct1", "correct2", "correct3", "correct4", "correct5"];

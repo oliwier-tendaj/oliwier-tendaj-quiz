@@ -1,3 +1,16 @@
+- ver 0.70 Alpha
+    dodano wybór kategorii quizu
+    dodano pytania do quizu
+
+- ver 0.60 Alpha
+    przetestowano stronę sposobem manualnym
+
+- ver 0.50 Alpha
+    bugfixes
+
+- ver 0.40 Alpha
+    bugfixes
+
 - ver 0.30 Alpha
     dodano przyciski do interfejsu
     dodano stylizacje strony

@@ -9,9 +9,15 @@
 <body>
 <div class="main-container">
 <h1>Quiz multimedialny</h1>
-Witam w moim quizie multimedialnym <br>
+Wybierz kategoie quizu: <br>
+<button onclick="selectCategory('cpp')">C++</button>
+<button onclick="selectCategory('java')">Java</button>
 <div id="footer">Oliwier Tendaj 2bp</div>
-<a href="kategorie.html"><button>Rozpocznij</button></a>
 </div>
+<script type="text/javascript">
+    selectCategory = function(category) {
+        location.replace("file:///C:/Users/blue/Desktop/school%20shiy/2BP_Oliwier_Tendaj_PROJOPP_AP_e4/quiz/quiz.html?" + category);
+    }
+</script>
 </body>
 </html>
