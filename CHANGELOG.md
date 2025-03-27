@@ -1,3 +1,6 @@
+- ver 0.80 Alpha
+    dodano więcej kategorii quizu do wyboru
+
 - ver 0.70 Alpha
     dodano wybór kategorii quizu
     dodano pytania do quizu
