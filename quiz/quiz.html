@@ -76,6 +76,70 @@
         <input type="radio" name="q5"> public     
         <input type="radio" name="q5"> default <br>
     </div>
+    <!--quiz w js-->
+    <div id="result-js">
+        Jak zadeklarować zmienną w JavaScript (ES6)? <br>
+        <input type="radio" name="q1"> var
+        <input type="radio" name="q1"> let
+        <input type="radio" name="q1"> const
+        <input type="radio" name="q1" id="correct1"> Wszystkie <br>
+    
+        Jakie typy danych istnieją w JavaScript? <br>
+        <input type="radio" name="q2"> Number
+        <input type="radio" name="q2"> String
+        <input type="radio" name="q2"> Boolean
+        <input type="radio" name="q2" id="correct2"> Wszystkie <br>
+    
+        Co zwróci console.log(typeof null)? <br>
+        <input type="radio" name="q3"> "null"
+        <input type="radio" name="q3" id="correct3"> "object"
+        <input type="radio" name="q3"> "undefined"
+        <input type="radio" name="q3"> "string" <br>
+    
+        Który operator porównuje wartości i typy? <br>
+        <input type="radio" name="q4"> ==
+        <input type="radio" name="q4" id="correct4"> ===
+        <input type="radio" name="q4"> =
+        <input type="radio" name="q4"> !== <br>
+    
+        Jak poprawnie zapisuje się funkcję strzałkową? <br>
+        <input type="radio" name="q5"> function() => {}
+        <input type="radio" name="q5" id="correct5"> () => {}
+        <input type="radio" name="q5"> => {}
+        <input type="radio" name="q5"> function => {} <br>
+    </div>
+    <!--quiz w pythonie-->
+    <div id="result-python">
+        Jakiego rozszerzenia używają pliki Pythona? <br>
+        <input type="radio" name="q1" id="correct1"> .py
+        <input type="radio" name="q1"> .python
+        <input type="radio" name="q1"> .pt
+        <input type="radio" name="q1"> .p <br>
+    
+        Jak deklaruje się funkcję w Pythonie? <br>
+        <input type="radio" name="q2" id="correct2"> def my_function():
+        <input type="radio" name="q2"> function my_function():
+        <input type="radio" name="q2"> func my_function():
+        <input type="radio" name="q2"> define my_function(): <br>
+    
+        Jak uzyskać długość listy my_list? <br>
+        <input type="radio" name="q3"> size(my_list)
+        <input type="radio" name="q3"> len(my_list) 
+        <input type="radio" name="q3"> length(my_list)
+        <input type="radio" name="q3" id="correct3"> count(my_list) <br>
+    
+        Które z poniższych są typami wbudowanymi w Pythonie? <br>
+        <input type="radio" name="q4"> list
+        <input type="radio" name="q4"> dict  
+        <input type="radio" name="q4"> tuple  
+        <input type="radio" name="q4" id="correct4"> Wszystkie<br>
+    
+        Co zwróci print(3 * "abc")? <br>
+        <input type="radio" name="q5" id="correct5"> abcabcabc  
+        <input type="radio" name="q5"> błąd  
+        <input type="radio" name="q5"> "3abc" 
+        <input type="radio" name="q5"> "abc abc abc" <br>
+    </div>
     </div>
     <div id="submit">
     <input type="submit" name="submit" value="Prześlij quiz" onclick="
@@ -86,11 +150,23 @@
     <script type="text/javascript">
         var link = window.location.href;
 
-        var category = link.replace("file:///C:/Users/blue/Desktop/school%20shiy/2BP_Oliwier_Tendaj_PROJOPP_AP_e4/quiz/quiz.html?","");
+        var category = link.replace("file:///C:/Users/blue/Desktop/school%20shiy/projekt%20na%20projop/2BP_Oliwier_Tendaj_PROJOPP_AP_e4/quiz/quiz.html?","");
 
         if (category === "cpp") {
-            document.getElementById('result-java').innerHTML = '<br>';
+            document.getElementById('result-java').innerHTML = ' ';
+            document.getElementById('result-js').innerHTML = ' ';
+            document.getElementById('result-python').innerHTML = ' ';
         } else if (category === "java") {
+            document.getElementById('result-cpp').innerHTML = ' ';
+            document.getElementById('result-js').innerHTML = ' ';
+            document.getElementById('result-python').innerHTML = ' ';
+        } else if (category === "js") {
+            document.getElementById('result-cpp').innerHTML = ' ';
+            document.getElementById('result-python').innerHTML = ' ';
+            document.getElementById('result-java').innerHTML = ' ';
+        } else if (category === "python") {
+            document.getElementById('result-cpp').innerHTML = ' ';
+            document.getElementById('result-java').innerHTML = ' ';
             document.getElementById('result-cpp').innerHTML = ' ';
         }
 
