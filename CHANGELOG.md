@@ -1,3 +1,6 @@
+- ver 0.90 Alpha
+    naprawiono błąd związany z ścieżką pliku
+
 - ver 0.80 Alpha
     dodano więcej kategorii quizu do wyboru
 

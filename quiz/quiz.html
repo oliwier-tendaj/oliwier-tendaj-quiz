@@ -149,22 +149,25 @@
 
     <script type="text/javascript">
         var link = window.location.href;
+        console.log(link);
 
-        var category = link.replace("file:///C:/Users/blue/Desktop/school%20shiy/projekt%20na%20projop/2BP_Oliwier_Tendaj_PROJOPP_AP_e4/quiz/quiz.html?","");
+        var category = link.slice(-14, -1);
+        category = category.replace("quiz.html?", "");
+        console.log(category);
 
         if (category === "cpp") {
             document.getElementById('result-java').innerHTML = ' ';
             document.getElementById('result-js').innerHTML = ' ';
             document.getElementById('result-python').innerHTML = ' ';
-        } else if (category === "java") {
+        } else if (category === "jav") {
             document.getElementById('result-cpp').innerHTML = ' ';
             document.getElementById('result-js').innerHTML = ' ';
             document.getElementById('result-python').innerHTML = ' ';
-        } else if (category === "js") {
+        } else if (category === "jsc") {
             document.getElementById('result-cpp').innerHTML = ' ';
             document.getElementById('result-python').innerHTML = ' ';
             document.getElementById('result-java').innerHTML = ' ';
-        } else if (category === "python") {
+        } else if (category === "pyt") {
             document.getElementById('result-cpp').innerHTML = ' ';
             document.getElementById('result-java').innerHTML = ' ';
             document.getElementById('result-cpp').innerHTML = ' ';
