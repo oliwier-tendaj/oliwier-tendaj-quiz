@@ -1,3 +1,6 @@
+- ver 1.0  
+    Skończona wersja aplikacji, upiększono ekran wyniku, zaktualizowano dokumentacje
+
 - ver 0.90 Alpha
     naprawiono błąd związany z ścieżką pliku
 

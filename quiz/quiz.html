@@ -149,11 +149,9 @@
 
     <script type="text/javascript">
         var link = window.location.href;
-        console.log(link);
 
         var category = link.slice(-14, -1);
         category = category.replace("quiz.html?", "");
-        console.log(category);
 
         if (category === "cpp") {
             document.getElementById('result-java').innerHTML = ' ';
@@ -170,7 +168,7 @@
         } else if (category === "pyt") {
             document.getElementById('result-cpp').innerHTML = ' ';
             document.getElementById('result-java').innerHTML = ' ';
-            document.getElementById('result-cpp').innerHTML = ' ';
+            document.getElementById('result-js').innerHTML = ' ';
         }
 
         function result() {
@@ -182,8 +180,14 @@
                     score++;
                 }   
             }
-            document.getElementById("result").innerHTML="Twój wynik to: " + score + " punktów";
-            document.getElementById("submit").innerHTML='<a href="index.html"><button>Powróć</button></a>';
+
+            score=score+"_";
+
+            displayResult(score);
+        }
+
+        displayResult = function(score) {
+            location.replace("result.html?" + score.toString());
         }
     </script>
 </body>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz multimedialny</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main-container">
+    <div class="container">
+    <h1>Quiz multimedialny</h1>
+    <div class="progress-container">
+        <h4>Wynik:</h4>
+        <div class="progress-bar">
+        </div>
+    </div>
+    <div id="footer">Oliwier Tendaj 2bp</div>
+    </div>
+    <a href="index.html"><button>Powróć</button></a>
+</div>
+
+<script type="text/javascript">
+    var link = window.location.href;
+
+    var score = link.slice(-14, -1);
+    score = score.replace("result.html?", "");
+    score = parseInt(score)*20;
+
+    var span = document.getElementsByClassName("progress-bar")[0]
+
+    span.innerHTML = '<span data-width="'+score+'%"></span>';
+
+    const spans = document.querySelectorAll('.progress-bar span');
+
+    spans.forEach((span) => {
+        span.style.width = span.dataset.width;
+        span.innerHTML = span.dataset.width;
+    })
+</script>
+
+</body>
+</html>
